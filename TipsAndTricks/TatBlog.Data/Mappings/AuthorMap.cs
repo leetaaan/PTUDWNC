@@ -26,7 +26,7 @@ namespace TatBlog.Data.Mappings
 
             builder.Property(a => a.Email).HasMaxLength(150);
 
-            builder.Property(a => a.JoinadDate).HasColumnType("datetime");
+            builder.Property(a => a.JoinedDate).HasColumnType("datetime");
 
             builder.Property(a => a.Notes).HasMaxLength(500);
         }

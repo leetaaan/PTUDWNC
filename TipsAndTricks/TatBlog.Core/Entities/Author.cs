@@ -22,7 +22,7 @@ namespace TatBlog.Core.Entities
         public string ImageUrl { get; set; }
 
         // Ngày bắt đầu 
-        public DateTime JoinadDate { get; set; }
+        public DateTime JoinedDate { get; set; }
 
         // Địa chỉ email 
         public string Email { get; set; }

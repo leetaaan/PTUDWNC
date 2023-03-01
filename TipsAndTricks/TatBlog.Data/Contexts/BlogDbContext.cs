@@ -1,25 +1,24 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TatBlog.Core.Entities;
 using TatBlog.Data.Mappings;
-namespace TatBlog.Data.Contextsc
+namespace TatBlog.Data.Contexts;
+
+internal class BlogDbContext : DbContext
 {
-    internal class BlogDbContext : DbContext
+    public DbSet<Author> Authors { get; set; }
+
+    public DbSet<Category> Categories { get; set; }
+
+    public DbSet<Post> Posts { get; set; }
+
+    public DbSet<Tag> Tags { get; set; }
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        public DbSet<Author> Authors { get; set; }
-
-        public DbSet<Category> Categories { get; set; }
-
-        public DbSet<Post> Posts { get; set; }
-
-        public DbSet<Tag> Tags { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"Server= DESKTOP-CC408KD;Database=TagBlog;Trusted_Connection=True;
+        optionsBuilder.UseSqlServer(@"Server= DESKTOP-CC408KD;Database=TagBlog;Trusted_Connection=True;
 MultipleActiveResultSets=True;TrustServerCertificate=True");
-        }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(CategoryMap).Assembly);
-        }
+    }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(CategoryMap).Assembly);
     }
 }
