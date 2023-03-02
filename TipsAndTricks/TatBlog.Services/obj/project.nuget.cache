@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VeL823QDw67V+MUG95X8sf0EV5aWwTKPebDObIMTSBqul5+Bhrhm1H2tVU8MhXNBdvJxpthXDfkaCX7HpBEDlw==",
+  "dgSpecHash": "i/OSZgYp/E0lg2EOkKfFngg7c5uqojYPIGrndu90qQKUkJOSoMk6yPLdtA7i732EDiXWnTeIB8HjXnIwffvZsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj",
+  "projectFilePath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\letan\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\letan\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
+      "projectUniqueName": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
       "projectName": "TatBlog.Core",
-      "projectPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
+      "projectPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
       "packagesPath": "C:\\Users\\letan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Core\\obj\\",
+      "outputPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\letan\\AppData\\Roaming\\NuGet\\NuGet.Config",

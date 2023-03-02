@@ -17,11 +17,16 @@ namespace TatBlog.Data.Mappings
 
             builder.HasKey(t => t.Id);
 
-            builder.Property(t => t.Name).HasMaxLength(50).IsRequired();
+            builder.Property(t => t.Name)
+                .HasMaxLength(50)
+                .IsRequired();
 
-            builder.Property(t => t.Description).HasMaxLength(500);
+            builder.Property(t => t.Description)
+                .HasMaxLength(500);
 
-            builder.Property(a => a.UrlSlug).HasMaxLength(50).IsRequired();
+            builder.Property(a => a.UrlSlug)
+                .HasMaxLength(50)
+                .IsRequired();
         }
     }
 }
