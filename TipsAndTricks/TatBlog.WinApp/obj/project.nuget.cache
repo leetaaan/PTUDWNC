@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lREonVtUJ7ZME7cFD6+cUDtqYDxClh95OL3Ps/7MWaObveM6K3+tdILPrw9bLAr7qlMb4dlDUGbqw3pLW3u8vw==",
+  "dgSpecHash": "u0ggNfjzbYUc5GzZAT1ibwG0P6keglq/L9SOeChXAsFpTUihiomwCA9LLcbrp2m6mjtHSLTPT6Pjhe6UnWCqJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
+  "projectFilePath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\letan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\letan\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -9,19 +9,19 @@ namespace TatBlog.Core.Entities
 {
     public class Post : IEntity
     {
-        // Mã chuyên mục
+        // Mã bài viết 
         public int Id { get; set; }
 
-        // Tên chuyên mục, chủ đề 
+        // Tiêu đề bài viết
         public string Title { get; set; }
 
-        // Mô tả thêm về chủ đề 
+        // Mô tả hoặc giới thiệu ngắn về nội dung 
         public string ShortDescription { get; set; }
             
-        // Mô tả thêm về chủ đề 
+        // Nội dung chị tiết của bài viết 
         public string Description { get; set; }
 
-        // Mô tả thêm về chủ đề 
+        // Metadata 
         public string Meta { get; set; }
 
         // Tên định danh dùng để tạo URL
@@ -30,31 +30,31 @@ namespace TatBlog.Core.Entities
         // Đường dẫn tới file hình ảnh  
         public string ImageUrl { get; set; }
 
-        // Ngày bắt đầu 
+        // Số lượt xem, đọc bài viết 
         public int ViewCount { get; set; }
 
-        // Đánh dấu chuyên mục được hiển thị trên menu
+        // Trạng thái của bài viết 
         public bool Published { get; set; }
 
-        // Ngày bắt đầu 
+        // Ngày giờ đăng bài
         public DateTime PostedDate { get; set; }
 
-        // Ngày bắt đầu 
+        // Ngày giờ cập nhật lần cuối 
         public DateTime? ModifiedDate { get; set; }
 
-        // Ngày bắt đầu 
+        // Mã chuyên mục 
         public int CategoryId { get; set; }
 
-        // Ngày bắt đầu 
+        // Mã tác giả cuẩ bài viết 
         public int AuthorId { get; set; }
 
-        //
+        // Chuyên mục của bài viết 
         public Category Category { get; set; }
 
-        //
+        // Tác giả của bài viết 
         public Author Author { get; set; }
 
-        // Danh sách các bài viết thuộc chuyên mục
+        // Danh sách các từ khóa của bài viết 
         public IList<Tag> Tags { get; set; }
     }
 }
