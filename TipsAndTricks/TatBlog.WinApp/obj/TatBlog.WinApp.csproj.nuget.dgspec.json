@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj": {}
+    "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
+    "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
+        "projectUniqueName": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
         "projectName": "TatBlog.Core",
-        "projectPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
+        "projectPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
         "packagesPath": "C:\\Users\\letan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Core\\obj\\",
+        "outputPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\letan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,14 +67,14 @@
         }
       }
     },
-    "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
+    "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj",
+        "projectUniqueName": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj",
         "projectName": "TatBlog.Data",
-        "projectPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj",
+        "projectPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj",
         "packagesPath": "C:\\Users\\letan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Data\\obj\\",
+        "outputPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\letan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +91,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
-                "projectPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
+              "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
+                "projectPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
               }
             }
           }
@@ -101,11 +109,11 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.14, )"
+              "version": "[7.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.14, )"
+              "version": "[7.0.3, )"
             }
           },
           "imports": [
@@ -128,14 +136,14 @@
         }
       }
     },
-    "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
+    "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj",
+        "projectUniqueName": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj",
         "projectName": "TatBlog.Services",
-        "projectPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj",
+        "projectPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj",
         "packagesPath": "C:\\Users\\letan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Services\\obj\\",
+        "outputPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\letan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -152,11 +160,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
-                "projectPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
+              "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
+                "projectPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
               },
-              "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
-                "projectPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
+              "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
+                "projectPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
               }
             }
           }
@@ -170,6 +178,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -190,14 +204,14 @@
         }
       }
     },
-    "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj": {
+    "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
+        "projectUniqueName": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
         "projectName": "TatBlog.WinApp",
-        "projectPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
+        "projectPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.WinApp\\TatBlog.WinApp.csproj",
         "packagesPath": "C:\\Users\\letan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.WinApp\\obj\\",
+        "outputPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.WinApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\letan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -214,14 +228,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
-                "projectPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
+              "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
+                "projectPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
               },
-              "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
-                "projectPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
+              "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
+                "projectPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
               },
-              "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
-                "projectPath": "C:\\Users\\letan\\PTUDWNC\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj"
+              "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
+                "projectPath": "C:\\Users\\letan\\source\\repos\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj"
               }
             }
           }
@@ -240,7 +254,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.14, )"
+              "version": "[7.0.3, )"
             }
           },
           "imports": [

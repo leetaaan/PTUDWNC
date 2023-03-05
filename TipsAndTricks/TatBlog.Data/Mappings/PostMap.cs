@@ -1,44 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using TatBlog.Core.Entities;
-
-namespace TatBlog.Data.Mappings
+using TagBlog.Core.Entities;
+namespace TagBlog.Data.Mappings
 {
-    internal class PostMap : IEntityTypeConfiguration<Post>
+    public class PostMap : IEntityTypeConfiguration<Post>
     {
         public void Configure(EntityTypeBuilder<Post> builder)
         {
             builder.ToTable("Posts");
 
-            builder.HasKey(p => p.Id);
+            builder.HasKey(x => x.Id);
 
             builder.Property(p => p.Title)
-                .HasMaxLength(500)
-                .IsRequired();
-
-            builder.Property(p => p.ShortDescription)
-                .HasMaxLength(5000)
-                .IsRequired();
+                .IsRequired()
+                .HasMaxLength(500);
 
             builder.Property(p => p.Description)
-                .HasMaxLength(5000)
-                .IsRequired();
+                .IsRequired()
+                .HasMaxLength(5000);
+
+            builder.Property(p => p.ShortDescription)
+                .IsRequired()
+                .HasMaxLength(5000);
 
             builder.Property(p => p.UrlSlug)
-                .HasMaxLength(200)
-                .IsRequired();
+                .IsRequired()
+                .HasMaxLength(200);
 
             builder.Property(p => p.Meta)
-                .HasMaxLength(1000)
-                .IsRequired();
+                .IsRequired()
+                .HasMaxLength(1000);
 
             builder.Property(p => p.ImageUrl)
-                .HasMaxLength(1000);
+               .HasMaxLength(1000);
 
             builder.Property(p => p.ViewCount)
                 .IsRequired()
@@ -48,21 +42,21 @@ namespace TatBlog.Data.Mappings
                 .IsRequired()
                 .HasDefaultValue(false);
 
-            builder.Property(p => p.PostedDate)
+            builder.Property(p => p.PostDate)
                 .HasColumnType("datetime");
 
-            builder.Property(p => p.ModifiedDate)
+            builder.Property(p => p.ModifedDate)
                 .HasColumnType("datetime");
 
             builder.HasOne(p => p.Category)
                 .WithMany(c => c.Posts)
-                .HasForeignKey(p => p.CategoryId)
+                .HasForeignKey(p => p.CategoryID)
                 .HasConstraintName("FK_Posts_Categories")
                 .OnDelete(DeleteBehavior.Cascade);
 
-            builder.HasOne(p => p.Category)
-                .WithMany(c => c.Posts)
-                .HasForeignKey(a => a.AuthorId)
+            builder.HasOne(p => p.Author)
+                .WithMany(a => a.Posts)
+                .HasForeignKey(p => p.AuthorID)
                 .HasConstraintName("FK_Posts_Authors")
                 .OnDelete(DeleteBehavior.Cascade);
 

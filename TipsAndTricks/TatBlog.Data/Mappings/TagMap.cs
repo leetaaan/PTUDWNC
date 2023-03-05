@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using TatBlog.Core.Entities;
-
-namespace TatBlog.Data.Mappings
+using TagBlog.Core.Entities;
+namespace TagBlog.Data.Mappings
 {
     public class TagMap : IEntityTypeConfiguration<Tag>
     {
@@ -15,18 +9,19 @@ namespace TatBlog.Data.Mappings
         {
             builder.ToTable("Tags");
 
-            builder.HasKey(t => t.Id);
+            builder.HasKey(x => x.Id);
 
-            builder.Property(t => t.Name)
-                .HasMaxLength(50)
-                .IsRequired();
+            builder.Property(x => x.Name)
+                .IsRequired()
+                .HasMaxLength(50);
 
-            builder.Property(t => t.Description)
+            builder.Property(x => x.Description)
                 .HasMaxLength(500);
 
-            builder.Property(a => a.UrlSlug)
-                .HasMaxLength(50)
-                .IsRequired();
+            builder.Property(x=>x.UrlSlug)
+                .IsRequired()
+                .HasMaxLength(50);
+
         }
     }
 }
