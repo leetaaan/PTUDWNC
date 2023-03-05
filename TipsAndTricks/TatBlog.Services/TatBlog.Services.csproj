@@ -13,9 +13,12 @@
 
   <ItemGroup>
     <Folder Include="Media\" />
+    <Folder Include="NewFolder\" />
     <Folder Include="Rss\" />
-    <Folder Include="Extensions\" />
-    <Folder Include="Blogs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.0" />
   </ItemGroup>
 
 </Project>

@@ -1,42 +1,40 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TatBlog.Core.Contracts;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using TatBlog.Core.Entities;
+using TagBlog.Core.Entities;
+namespace TagBlog.Data.Mappings;
 
-namespace TatBlog.Data.Mappings
+public class AuthorMap:IEntityTypeConfiguration<Author>
 {
-    public class AuthorMap : IEntityTypeConfiguration<Author>
+    public void Configure(EntityTypeBuilder<Author> builder)
     {
-        public void Configure(EntityTypeBuilder<Author> builder)
-        {
-            builder.ToTable("Authors");
-            
-            builder.HasKey(a => a.Id);
+        builder.ToTable("Authors");
 
-            builder.Property(a => a.FullName)
-                .IsRequired()
-                .HasMaxLength(100);
+        builder.HasKey(x => x.Id);
 
-            builder.Property(a =>a.UrlSlug)
-                .HasMaxLength(100)
-                .IsRequired();
+        builder.Property(x => x.FullName)
+            .IsRequired()
+            .HasMaxLength(100);
 
-            builder.Property(a => a.ImageUrl)
-                .HasMaxLength(500);
+        builder.Property(x => x.UrlSlug)
+            .HasMaxLength(100)
+            .IsRequired();
 
-            builder.Property(a => a.Email)
-                .HasMaxLength(150);
+        builder.Property(x => x.ImageUrl)
+           .HasMaxLength(500);
 
-            builder.Property(a => a.JoinedDate)
-                .HasColumnType("datetime");
+        builder.Property(x => x.Email)
+            .HasMaxLength(150);
 
-            builder.Property(a => a.Notes)
-                .HasMaxLength(500);
-        }
+        builder.Property(x => x.JoinedDate)
+            .HasColumnType("datetime");
+
+        builder.Property(x => x.Notes)
+            .HasMaxLength(500);
+
     }
 }

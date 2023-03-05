@@ -1,60 +1,55 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TatBlog.Core.Contracts;
+﻿using TagBlog.Core.Constracts;
 
-namespace TatBlog.Core.Entities
+namespace TagBlog.Core.Entities
 {
     public class Post : IEntity
     {
-        // Mã bài viết 
+        // Mã bài viết
         public int Id { get; set; }
 
         // Tiêu đề bài viết
         public string Title { get; set; }
 
-        // Mô tả hoặc giới thiệu ngắn về nội dung 
+        // Mô tả hay giới thiệu ngắn về nội dung
         public string ShortDescription { get; set; }
-            
-        // Nội dung chị tiết của bài viết 
+
+        // Nội dung chi tiết của bài viết
         public string Description { get; set; }
 
-        // Metadata 
+        // Metadata
         public string Meta { get; set; }
 
-        // Tên định danh dùng để tạo URL
+        // Tên định danh để tạo URL
         public string UrlSlug { get; set; }
 
-        // Đường dẫn tới file hình ảnh  
+        // Đường dẫn đến tập tin hình ảnh
         public string ImageUrl { get; set; }
 
-        // Số lượt xem, đọc bài viết 
+        // Số lượt xem, đọc bài viết
         public int ViewCount { get; set; }
 
-        // Trạng thái của bài viết 
+        // Trạng thái của bài viết
         public bool Published { get; set; }
 
         // Ngày giờ đăng bài
-        public DateTime PostedDate { get; set; }
+        public DateTime PostDate { get; set; }
 
-        // Ngày giờ cập nhật lần cuối 
-        public DateTime? ModifiedDate { get; set; }
+        // Ngày giờ cập nhạt lần cuối
+        public DateTime? ModifedDate { get; set; }
 
-        // Mã chuyên mục 
-        public int CategoryId { get; set; }
+        // Mã chuyên mục
+        public int CategoryID { get; set; }
 
-        // Mã tác giả cuẩ bài viết 
-        public int AuthorId { get; set; }
+        // Mã tác giả của bài viết
+        public int AuthorID { get; set; }
 
-        // Chuyên mục của bài viết 
+        // Chuyên mục của bài viết
         public Category Category { get; set; }
 
-        // Tác giả của bài viết 
+        // Tác giả của bài viết
         public Author Author { get; set; }
 
-        // Danh sách các từ khóa của bài viết 
+        // Danh sách ác từ khóa của bài viết
         public IList<Tag> Tags { get; set; }
     }
 }
