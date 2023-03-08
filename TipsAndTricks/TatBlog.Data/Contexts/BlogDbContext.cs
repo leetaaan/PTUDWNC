@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TagBlog.Core.Entities;
-using TagBlog.Data.Mappings;
+using TatBlog.Core.Entities;
+using TatBlog.Data.Mappings;
 
-namespace TagBlog.Data.Contexts
+namespace TatBlog.Data.Contexts
 {
     public class BlogDbContext : DbContext
     {

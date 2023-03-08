@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TagBlog.Core.DTO
+namespace TatBlog.Core.DTO
 {
     public class TagItem
     {

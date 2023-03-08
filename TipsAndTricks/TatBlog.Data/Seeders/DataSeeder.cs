@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TagBlog.Data.Contexts;
-using TagBlog.Core.Entities;
-namespace TagBlog.Data.Seeders
+using TatBlog.Data.Contexts;
+using TatBlog.Core.Entities;
+namespace TatBlog.Data.Seeders
 {
     public class DataSeeder : IDataSeeder
     {

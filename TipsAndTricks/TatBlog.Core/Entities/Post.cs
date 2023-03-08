@@ -1,6 +1,6 @@
-﻿using TagBlog.Core.Constracts;
+﻿using TatBlog.Core.Constracts;
 
-namespace TagBlog.Core.Entities
+namespace TatBlog.Core.Entities
 {
     public class Post : IEntity
     {

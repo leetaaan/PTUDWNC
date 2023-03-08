@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TagBlog.Core.Constraints;
+using TatBlog.Core.Constraints;
 
-namespace TagBlog.WinApp
+namespace TatBlog.WinApp
 {
     public class PagingParams : IPagingParams
     {

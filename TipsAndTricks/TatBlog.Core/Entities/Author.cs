@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TagBlog.Core.Constracts;
+using TatBlog.Core.Constracts;
 
-namespace TagBlog.Core.Entities
+namespace TatBlog.Core.Entities
 {
     public class Author:IEntity
     {
