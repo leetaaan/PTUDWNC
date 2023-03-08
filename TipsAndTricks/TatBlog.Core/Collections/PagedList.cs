@@ -1,6 +1,6 @@
 ﻿using System.Collections;
-using TagBlog.Core.Constraints;
-namespace TagBlog.Core.Collections
+using TatBlog.Core.Constraints;
+namespace TatBlog.Core.Collections
 {
     public class PagedList<T> : IPagedList<T>
     {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TagBlog.Core.Collections;
-using TagBlog.Core.Constraints;
+using TatBlog.Core.Collections;
+using TatBlog.Core.Constraints;
 using System.Linq.Dynamic.Core;
-namespace TagBlog.Services.Extensions
+namespace TatBlog.Services.Extensions
 {
     public static class PagedListExtension
     {

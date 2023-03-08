@@ -2,7 +2,7 @@
 using TagBlog.Data.Seeders;
 using TatBlog.Services.Blogs;
 
-namespace TagBlog.WinApp
+namespace TatBlog.WinApp
 {
     public class Program
     {

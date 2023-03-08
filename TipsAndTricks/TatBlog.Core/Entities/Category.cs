@@ -1,5 +1,5 @@
-﻿using TagBlog.Core.Constracts;
-namespace TagBlog.Core.Entities
+﻿using TatBlog.Core.Constracts;
+namespace TatBlog.Core.Entities
 {
     public class Category : IEntity
     {

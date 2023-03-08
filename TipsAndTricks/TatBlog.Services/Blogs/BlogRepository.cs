@@ -4,15 +4,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TagBlog.Core.Constraints;
-using TagBlog.Core.DTO;
-using TagBlog.Core.Entities;
-using TagBlog.Data.Contexts;
-using TagBlog.Services.Extensions;
+using TatBlog.Core.Constraints;
+using TatBlog.Core.DTO;
+using TatBlog.Core.Entities;
+using TatBlog.Data.Contexts;
+using TatBlog.Services.Extensions;
 
 namespace TatBlog.Services.Blogs
 {
-    public class BlogRepository: IBlogRepository
+    public class BlogRepository : IBlogRepository
     {
         private readonly BlogDbContext _context;
         public BlogRepository(BlogDbContext context)
@@ -108,6 +108,11 @@ namespace TatBlog.Services.Blogs
                     PostCount = x.Posts.Count(p => p.Published)
                 });
             return await tagQuery.ToPagedListAsync(pagingParams, cancellationToken);
+        }
+
+        Task IBlogRepository.GetPagedTagsAsync(TatBlog.WinApp.PagingParams pagingParams)
+        {
+            throw new NotImplementedException();
         }
     }
 }

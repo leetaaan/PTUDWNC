@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using TagBlog.Core.Entities;
-namespace TagBlog.Data.Mappings
+using TatBlog.Core.Entities;
+namespace TatBlog.Data.Mappings
 {
     public class TagMap : IEntityTypeConfiguration<Tag>
     {

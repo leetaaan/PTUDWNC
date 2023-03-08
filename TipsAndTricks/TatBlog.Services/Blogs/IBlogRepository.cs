@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TagBlog.Core.Constraints;
-using TagBlog.Core.DTO;
-using TagBlog.Core.Entities;
+using TatBlog.Core.Constraints;
+using TatBlog.Core.DTO;
+using TatBlog.Core.Entities;
 
 namespace TatBlog.Services.Blogs
 {
@@ -31,6 +31,6 @@ namespace TatBlog.Services.Blogs
         Task<IPagedList<TagItem>> GetPagedTagsAsync(
             IPagingParams pagingParams,
             CancellationToken cancellationToken = default);
-        Task GetPagedTagsAsync(TagBlog.WinApp.PagingParams pagingParams);
+        Task GetPagedTagsAsync(TatBlog.WinApp.PagingParams pagingParams);
     }
 }

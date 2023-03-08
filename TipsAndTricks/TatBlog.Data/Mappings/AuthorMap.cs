@@ -5,8 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TagBlog.Core.Entities;
-namespace TagBlog.Data.Mappings;
+using TatBlog.Core.Entities;
+namespace TatBlog.Data.Mappings;
 
 public class AuthorMap:IEntityTypeConfiguration<Author>
 {
