@@ -41,8 +41,12 @@
                         <a asp-controller="Blog"
                         asp-action="Post"
                         asp-route-year="@Model.PostDate.Year"
-                        asp-route-moutnh="@Model.PostDate.Month">
-                            
+                        asp-route-moutnh="@Model.PostDate.Month"
+                        asp-route-day="@Model.PostDate.Day"
+                        asp-route-slug="@Model.UrlSlug"
+                        class="btn btnbtn-primary"
+                        title="@Model.Title">
+                            Xem chi tiết
                         </a>
                     </div>
                 </div>
