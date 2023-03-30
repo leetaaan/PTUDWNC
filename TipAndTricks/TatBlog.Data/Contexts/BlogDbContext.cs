@@ -10,6 +10,11 @@ namespace TatBlog.Data.Contexts
         public DbSet<Category> Categories { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<Tag> Tags { get; set; }
+
+        public BlogDbContext (DbContextOptions<BlogDbContext> options):base(options)
+        {
+
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-CC408KD\SQLEXPRESS;Initial Catalog=TatBlog;Integrated Security=True;Trust Server Certificate=true");

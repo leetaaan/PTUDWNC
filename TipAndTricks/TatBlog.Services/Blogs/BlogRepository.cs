@@ -104,5 +104,22 @@ namespace TatBlog.Services.Blogs
                 });
             return await tagQuery.ToPagedListAsync(pagingParams, cancellationToken);
         }
+
+        public Task<IPagedList<TagItem>> GetCategoryItemsAsync(IPagingParams pagingParams, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<IPagedList<Post>> GetPagedPostsAsync(
+            PostQuery condition,
+            int pageNumber = 1,
+            int pageSize = 10,
+            CancellationToken cancellationToken = default)
+        {
+            return await FilterPost(condition).ToPagedListAsync(
+                pageNumber, pageSize,
+                nameof(Post.PostDate), "DESC",
+                cancellationToken);
+        }
     }
 }
